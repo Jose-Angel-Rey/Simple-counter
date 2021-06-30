@@ -8,8 +8,15 @@ let counter = document.getElementById("counter");
 
 counter.textContent = 0;
 
-console.log(buttons)
+console.log(buttons);
 
-buttons.forEach(button () => {
-    console.log(button)
-})
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const btnId = button.getAttribute("id");
+    if (btnId === "increase") increaseCounter();
+  });
+});
+
+function increaseCounter() {
+  counter.textContent += 1;
+}
