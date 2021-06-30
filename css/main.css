@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    background-color: #202020;
+    color: #fff;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+.main-content{
+    display: flex;
+    width: 100%;
+}
+.counter{
+    border: 1px solid cyan;
+    margin: auto;
+}
+.counter button{
+    padding: 1rem;
+    font-size: 1.2rem;
+}
