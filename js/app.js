@@ -14,9 +14,18 @@ buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const btnId = button.getAttribute("id");
     if (btnId === "increase") increaseCounter();
+    if (btnId === "decrease") decreaseCounter();
+    if (btnId === "reset") resetCounter();
   });
 });
 
 function increaseCounter() {
   counter.textContent += 1;
 }
+function decreaseCounter() {
+  counter.textContent -= 1;
+}
+function resetCounter() {
+  counter.textContent = 0;
+}
+
