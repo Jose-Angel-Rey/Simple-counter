@@ -5,7 +5,7 @@
 }
 
 .main-container {
-    border: 1px solid cyan;
+    border: 1px solid #03a83a;
     background-image: linear-gradient(#081A78,#50CF8F);
 
     color: #fff;

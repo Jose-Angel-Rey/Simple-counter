@@ -5,10 +5,10 @@ const increaseBtn = document.getElementById("increase");
 const decreaseBtn = document.getElementById("decrease");
 const resetBtn = document.getElementById("reset");
 let counter = document.getElementById("counter");
+let inicialCounter = counter.getAttribute("data-counter");
 
-counter.textContent = 0;
-
-console.log(buttons);
+console.log(inicialCounter);
+counter.textContent = inicialCounter;
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -19,13 +19,20 @@ buttons.forEach((button) => {
   });
 });
 
+function changeCounterColor() {
+  if (counter < 0) counter.style.color = "#c40d0d";
+  if (counter > 0) counter.style.color = "#03a83a";
+}
 function increaseCounter() {
-  counter.textContent += 1;
+  inicialCounter++;
+  counter.textContent = inicialCounter;
+  changeCounterColor();
 }
 function decreaseCounter() {
   counter.textContent -= 1;
+  changeCounterColor();
 }
 function resetCounter() {
-  counter.textContent = 0;
+  inicialCounter = 0;
+  changeCounterColor();
 }
-
