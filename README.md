@@ -2,4 +2,4 @@
 ---
 ![Preview](./assets/preview.webp)
 
-[Go to Counter 🚀](#)
+[Go to Counter 🚀](https://cool-counter.vercel.app/)
