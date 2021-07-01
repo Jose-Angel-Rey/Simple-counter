@@ -84,7 +84,10 @@
 
 .counter button:hover {
     transform: scale(1.1);
+}
 
+.counter button:active {
+    transform: scale(1);
 }
 
 .attribution-footer {
