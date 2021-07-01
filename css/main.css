@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(-4rem);
+    transform: translateY(-2rem);
     width: 100%;
 }
 
@@ -29,8 +29,16 @@
     background: linear-gradient(#5c5c5c, #2e2e2e);
     background-clip: text;
     -webkit-background-clip: text;
+    position: relative;
     font-size: 4rem;
     margin-bottom: 2rem;
+}
+
+.main-content h1::after {
+    content: url(../assets/logo.svg);
+    position: absolute;
+    top: -3.5rem;
+    left: 35%;
 }
 
 .counter {
@@ -48,7 +56,7 @@
     width: 75%;
     min-width: 16rem;
     max-width: 26rem;
-    padding: 8rem 0;
+    padding: 7rem 0;
 }
 
 .counter span {
@@ -72,8 +80,8 @@
     outline: none;
     border-radius: 50%;
     background: linear-gradient(145deg, #d6d6d6, #ffffff);
-    box-shadow:  10px 10px 10px #bebebe,
-                 -10px -10px 10px #ffffff;
+    box-shadow: 10px 10px 10px #bebebe,
+        -10px -10px 10px #ffffff;
     cursor: pointer;
     height: 3.5rem;
     font-size: 1.5rem;
@@ -120,6 +128,20 @@
 }
 
 @media screen and (max-height:500px) {
+    .attribution-footer {
+        right: 0;
+        top: 0;
+        left: unset;
+        bottom: unset;
+    }
+}
+
+@media screen and (max-height:570px) {
+    .main-container {
+        min-height: 120vh;
+
+    }
+
     .attribution-footer {
         right: 0;
         top: 0;
